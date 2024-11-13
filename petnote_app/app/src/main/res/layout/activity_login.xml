@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_note" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        android:textSize="24sp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"/>
+
+    <!-- Correo con borde redondeado y color de fondo -->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Ingrese su correo electrónico"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="16dp"/>
+
+    <!-- Contraseña con borde redondeado y color de fondo -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Ingrese su contraseña"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="16dp"/>
+
+
+    <!-- Botón de inicio de sesión -->
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"/>
+
+    <!-- Botón para redirigir al registro -->
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olvidaste tu contraseña?"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:focusable="true"/>
+</LinearLayout>
